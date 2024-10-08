@@ -1,0 +1,129 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('sunset.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect on the container */
+.container:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+h1 {
+    font-size: 30px;
+    color: #333; 
+    padding: 10px 20px;
+    border: 3px solid #007BFF; 
+    border-radius: 10px;
+    letter-spacing: 1px;
+    text-transform: none; 
+    text-shadow: none; 
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+
+input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+
+button:active {
+    transform: translateY(0);
+}
+
+
+.weather-info {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #555;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.weather-info.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.weather-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.weather-info p {
+    font-size: 20px;
+    color: #555;
+    margin: 5px 0;
+}
+
+
+#temperature {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+
+#description {
+    text-transform: capitalize;
+    font-style: italic;
+    color: #666;
+}
